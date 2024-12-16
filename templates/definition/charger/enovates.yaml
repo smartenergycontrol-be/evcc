@@ -1,0 +1,19 @@
+template: enovates
+products:
+  - brand: Enovates
+    description:
+      generic: Modbus TCP Charger
+capabilities: ["mA"]
+requirements:
+  description:
+    en: Requires Modbus TCP enabled and EMS mode for control
+  evcc: ["sponsorship"]
+params:
+  - name: uri
+    type: string
+    description:
+      en: IP address or hostname with port (e.g., 192.168.1.10:502)
+render: |
+  type: enovates
+  uri: {{ .uri }}
+  id: 1  # Default Modbus slave ID
