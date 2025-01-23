@@ -19,7 +19,7 @@ type Enovates struct {
 }
 
 const (
-	enovatesRegPhases         = 50  // Number of connector output phases
+	enovatesRegPhases         = 51  // Number of connector output phases
 	enovatesRegMaxAmp         = 52  // Max Amp per phase
 	enovatesRegOCPPStatus     = 53  // OCPP Status
 	enovatesRegLoadShedding   = 54  // Load shedding enabled
@@ -27,9 +27,9 @@ const (
 	enovatesRegContactor      = 56  // Contactor state
 	enovatesRegLED            = 57  // LED Index
 	enovatesRegCurrents       = 201 // Measured Current L1-L3
-	enovatesRegVoltages       = 203 // Measured Voltage L1-L3
+	enovatesRegVoltages       = 204 // Measured Voltage L1-L3
 	enovatesRegPowerTotal     = 207 // Power Active Total
-	enovatesRegEnergy         = 213 // Active Energy Import total
+	enovatesRegEnergy         = 214 // Active Energy Import total
 	enovatesRegStatus         = 301 // Mode 3 state numeric
 	enovatesRegCurrentOffered = 401 // Current Offered
 )
